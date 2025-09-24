@@ -17,12 +17,3 @@ result-*
 # ignore latex aux/sync files
 **/.texaux
 **/*.synctex.gz
-
-# ignore rproject dirs/files
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
-# ignore matlab autosave files
-.asv
