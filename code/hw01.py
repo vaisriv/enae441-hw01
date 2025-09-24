@@ -2,14 +2,12 @@
 # IMPORTS AND SETUP
 # Import necessary libraries and configure settings
 ###############################################
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sp
 
-# np.set_printoptions(formatter={'float': matplotlib.ticker.EngFormatter()})
 np.set_printoptions(suppress=True)
-plt.rcParams["text.usetex"] = True
+# plt.rcParams["text.usetex"] = True
 
 
 ###############################################
