@@ -65,8 +65,8 @@ _EPS = 1e-12
 
 # FUNCTIONS
 def _wrap_0_2pi(angle):
-    a = np.fmod(angle, np.pi*2)
-    return a + np.pi*2 if a < 0.0 else a
+    a = np.fmod(angle, np.pi * 2)
+    return a + np.pi * 2 if a < 0.0 else a
 
 
 def _angle_around_h(u, v, h_hat):
@@ -232,7 +232,7 @@ def orbital_period(oe):
         raise ValueError(
             "Semi-major axis must be positive and finite for an elliptical orbit."
         )
-    period = np.pi*2 * np.sqrt(a**3 / _MU)
+    period = np.pi * 2 * np.sqrt(a**3 / _MU)
 
     return period
 
@@ -316,7 +316,7 @@ def plot_oe_v_time(X_N):
     # Plot argument of perigee (ω)
     axs[3].plot(t, argp)
     axs[3].set_title("Argument of perigee $\\omega$ [rad]")
-    axs[3].set_ylim(0, np.pi/2)
+    axs[3].set_ylim(0, np.pi / 2)
 
     # Plot right ascension of the ascending node (Ω)
     axs[4].plot(t, raan)

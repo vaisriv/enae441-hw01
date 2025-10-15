@@ -41,39 +41,39 @@
 	\hwkPart{} \label{hwk:s01a}
 
 	\begin{align*}
-		\vecb{v} \cdot \vecb{v}& = |\vecb{v}|^{2} = v^{2} \\
-		\vecb{v} &= \dot{\vecb{r}} \\
-		|\vecb{h}| &= h \\
-		\vecb{e} &= \frac{1}{\mu} \left(\dot{\vecb{r}} \times \vecb{h} - \mu \frac{\vecb{r}}{|\vecb{r}|} \right) \\
-		\dot{\vecb{r}} \times \vecb{h} &= v h \hat{r} \\
-		- \mu \frac{\vecb{r}}{|\vecb{r}|} &= - \mu \hat{r} \\
-		\implies \vecb{e} &= \left(\frac{v h}{\mu} - 1\right) \hat{r} \\
-		\text{at periapsis:} & \, \\
-		r_{p} v_{p} &= h \\
-		r_{p} &= a \left(1 - e\right) \\
-		\implies a &= \frac{r}{1-e} \\
-		\vecb{e} &= \left(\frac{r v^{2}}{\mu} - 1\right) \hat{r} \\
-		\implies v^{2} &= \frac{\left(e + 1\right)\mu}{r} \\
-		\epsilon &= \frac{v^{2}}{2} - \frac{\mu}{r} \\
-		\, &= \frac{v^{2}}{1} - \frac{v^{2}}{e + 1} \\
-		\, &= \frac{\left(e + 1\right) \mu}{2 r} - \frac{\mu}{r} \\
-		\, &= \frac{\left(e + 1\right)\mu - 2 \mu}{2 r} \\
-		\, &= - \mu \frac{1 - e}{2 r} \\
-		\, &= - \frac{\mu}{2} \cancelto{\frac{1}{a}}{\left(\frac{1 - e}{r}\right)} \\
-		\implies \epsilon &= - \frac{\mu}{2 a}
-	.\end{align*}
+		\vecb{v} \cdot \vecb{v}           & = |\vecb{v}|^{2} = v^{2}                                                                       \\
+		\vecb{v}                          & = \dot{\vecb{r}}                                                                               \\
+		|\vecb{h}|                        & = h                                                                                            \\
+		\vecb{e}                          & = \frac{1}{\mu} \left(\dot{\vecb{r}} \times \vecb{h} - \mu \frac{\vecb{r}}{|\vecb{r}|} \right) \\
+		\dot{\vecb{r}} \times \vecb{h}    & = v h \hat{r}                                                                                  \\
+		- \mu \frac{\vecb{r}}{|\vecb{r}|} & = - \mu \hat{r}                                                                                \\
+		\implies \vecb{e}                 & = \left(\frac{v h}{\mu} - 1\right) \hat{r}                                                     \\
+		\text{at periapsis:}              & \,                                                                                             \\
+		r_{p} v_{p}                       & = h                                                                                            \\
+		r_{p}                             & = a \left(1 - e\right)                                                                         \\
+		\implies a                        & = \frac{r}{1-e}                                                                                \\
+		\vecb{e}                          & = \left(\frac{r v^{2}}{\mu} - 1\right) \hat{r}                                                 \\
+		\implies v^{2}                    & = \frac{\left(e + 1\right)\mu}{r}                                                              \\
+		\epsilon                          & = \frac{v^{2}}{2} - \frac{\mu}{r}                                                              \\
+		\,                                & = \frac{v^{2}}{1} - \frac{v^{2}}{e + 1}                                                        \\
+		\,                                & = \frac{\left(e + 1\right) \mu}{2 r} - \frac{\mu}{r}                                           \\
+		\,                                & = \frac{\left(e + 1\right)\mu - 2 \mu}{2 r}                                                    \\
+		\,                                & = - \mu \frac{1 - e}{2 r}                                                                      \\
+		\,                                & = - \frac{\mu}{2} \cancelto{\frac{1}{a}}{\left(\frac{1 - e}{r}\right)}                         \\
+		\implies \epsilon                 & = - \frac{\mu}{2 a}
+		.\end{align*}
 
 	\hwkPart{} \label{hwk:s01b}
 
 	\begin{align*}
-		\epsilon &= \frac{\vecb{v} - \vecb{v}}{2} - \frac{\mu}{r} \\
-		\, &= \frac{\dot{\vecb{r}} \cdotp \dot{\vecb{r}}}{2} - \frac{\mu}{r} \\
-		\, &= \frac{\left(\dot{r}\right)^{2}}{2} - \frac{\mu}{r} \\
-		\drv{\epsilon}{t} &= \frac{2 \dot{r} \ddot{r}}{2} + \frac{\mu \dot{r}}{r^{2}} \\
-		\, &= \dot{r} \left(\ddot{r} + \cancelto{- \ddot{r}}{\left(\frac{\mu}{r^{2}}\right)} \qquad \right)  \\
-		\, &= \dot{r} \, \cancelto{0}{\left(\ddot{r} - \ddot{r}\right)} \\
-		\implies \drv{\epsilon}{t} &= 0
-	.\end{align*}
+		\epsilon                   & = \frac{\vecb{v} - \vecb{v}}{2} - \frac{\mu}{r}                                                 \\
+		\,                         & = \frac{\dot{\vecb{r}} \cdotp \dot{\vecb{r}}}{2} - \frac{\mu}{r}                                \\
+		\,                         & = \frac{\left(\dot{r}\right)^{2}}{2} - \frac{\mu}{r}                                            \\
+		\drv{\epsilon}{t}          & = \frac{2 \dot{r} \ddot{r}}{2} + \frac{\mu \dot{r}}{r^{2}}                                      \\
+		\,                         & = \dot{r} \left(\ddot{r} + \cancelto{- \ddot{r}}{\left(\frac{\mu}{r^{2}}\right)} \qquad \right) \\
+		\,                         & = \dot{r} \, \cancelto{0}{\left(\ddot{r} - \ddot{r}\right)}                                     \\
+		\implies \drv{\epsilon}{t} & = 0
+		.\end{align*}
 
 \end{hwkProblem}
 
@@ -84,11 +84,11 @@
 	\hwkSol{} \label{hwk:s02}
 
 	\begin{align*}
-		\ddot{\vecb{r}} \times \vecb{h} &= \left(- \frac{\mu}{r^{2}} \hat{r}\right) \times \left(r^{2} \dot{\theta} \hat{h}\right) \\
-		\, &= - \mu \dot{\theta} \hat{r} \hat{h} \\
-		\, &= \mu \dot{\theta} \hat{\theta} \\
-		\implies \ddot{\vecb{r}} \times \vecb{h} &= \mu \deriv{t}{\frac{\vecb{r}}{r}}
-	.\end{align*}
+		\ddot{\vecb{r}} \times \vecb{h}          & = \left(- \frac{\mu}{r^{2}} \hat{r}\right) \times \left(r^{2} \dot{\theta} \hat{h}\right) \\
+		\,                                       & = - \mu \dot{\theta} \hat{r} \hat{h}                                                      \\
+		\,                                       & = \mu \dot{\theta} \hat{\theta}                                                           \\
+		\implies \ddot{\vecb{r}} \times \vecb{h} & = \mu \deriv{t}{\frac{\vecb{r}}{r}}
+		.\end{align*}
 
 \end{hwkProblem}
 
@@ -112,27 +112,27 @@
 	Using SciPy's \mintinline{python}{solve_ivp} function that takes the cartesian state vector from \hyperref[hwk:p03]{Problem 3}, \( \fn{\vecb{X}}[t_{0}] \), and integrate the orbit for one period using the following differential equation:
 	\[
 		{ }^{\mathcal{N}} \dot{\vecb{X}}=\left[\begin{array}{c}
-				\dot{x} \\
-				\dot{y} \\
-				\dot{z} \\
+				\dot{x}  \\
+				\dot{y}  \\
+				\dot{z}  \\
 				\ddot{x} \\
 				\ddot{y} \\
 				\ddot{z}
-				\end{array}\right]=\left[\begin{array}{c}
-				\dot{x} \\
-				\dot{y} \\
-				\dot{z} \\
+			\end{array}\right]=\left[\begin{array}{c}
+				\dot{x}      \\
+				\dot{y}      \\
+				\dot{z}      \\
 				-\mu x / r^3 \\
 				-\mu y / r^3 \\
 				-\mu z / r^3
-				\end{array}\right] ; \quad \vecb{X}=\left[\begin{array}{c}
-				x \\
-				y \\
-				z \\
+			\end{array}\right] ; \quad \vecb{X}=\left[\begin{array}{c}
+				x       \\
+				y       \\
+				z       \\
 				\dot{x} \\
 				\dot{y} \\
 				\dot{z}
-		\end{array}\right]
+			\end{array}\right]
 	\]
 
 	\begin{enumerate}
