@@ -22,8 +22,7 @@ inputs.treefmt-nix.lib.mkWrapper pkgs {
 
     # python
     programs = {
-        ruff-check.enable = true;
-        ruff-format.enable = true;
+        black.enable = true;
     };
 
     # latex
