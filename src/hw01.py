@@ -292,7 +292,7 @@ def plot_oe_v_time(X_N):
         a[k], e[k], inc[k], argp[k], raan[k], tru[k] = state_to_orbital_elements(Y[k])
 
     # Set up plots
-    fig, axs = plt.subplots(3, 2, figsize=(10, 9), constrained_layout=True)
+    fig, axs = plt.subplots(3, 2, constrained_layout=True)
     axs = axs.ravel()
     for ax in axs:
         ax.set_xlabel("time [s]")
